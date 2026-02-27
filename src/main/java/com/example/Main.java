@@ -11,8 +11,8 @@ public class Main {
     System.out.println("Combustible después de intentar setCombustible(): " + camion.getCombustible());
 
     ArrayList<Transporte> flota = new ArrayList<>();
-     flota.add(new CamionDeReparto("1", 2000, 1000.0, true));
-     flota.add(new BuqueCarga("2", 5000.0, 25000.0, 50));
+     flota.add(camion);
+     flota.add(buque);
         
      for (Transporte transporte : flota) {
             System.out.println("Transporte: " + transporte.getIdTransporte());
