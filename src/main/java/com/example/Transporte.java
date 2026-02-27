@@ -15,12 +15,13 @@ public class Transporte {
         return idTransporte;
     }
 
-    public void setCombustible(double nivel){
-        if (nivel >= 0){
+    public void setCombustible(double nivel) {
+        if (nivel < 0) {
+            this.combustible = 0;
+        } else if (nivel > 100) {
+            this.combustible = 100;
+        } else {
             this.combustible = nivel;
-        } else{
-            System.out.println("Error: El nivel de combustible no puede ser negativo. Valor no modificado.");
-
         }
     }
     public double getCombustible(){
