@@ -1,3 +1,4 @@
+package main.java.com.example;
 public class CamionDeReparto extends Transporte{
 
     private boolean tieneRefrigeracion = true;
